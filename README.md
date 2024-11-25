@@ -2,7 +2,7 @@
 
 A high-performance, feature-rich video streaming platform built with **React.js**, **Tailwind CSS**, and **React-Redux** for state management. This platform allows users to explore videos, interact with comments, and engage in live chats — all while ensuring optimized performance and seamless user experience.
 
----
+
 
 ## 🚀 Live Demo
 
@@ -10,11 +10,7 @@ A high-performance, feature-rich video streaming platform built with **React.js*
 
 
 
----
 
-
-
----
 
 ## Features
 
@@ -34,7 +30,7 @@ A high-performance, feature-rich video streaming platform built with **React.js*
 - **High Performance**:
     - The platform is optimized for long-term use without freezing, even when left open for an entire day.
 
----
+
 
 ## Technologies
 
@@ -50,7 +46,7 @@ A high-performance, feature-rich video streaming platform built with **React.js*
 - **Search Optimization**:
     - **Debouncing** technique to optimize API calls and avoid unnecessary data fetching when the user is typing.
 
----
+
 
 ## How It Works
 
@@ -68,7 +64,7 @@ A high-performance, feature-rich video streaming platform built with **React.js*
     - **API Polling** ensures messages are fetched periodically, providing a smooth chat experience without page refreshes.
     - To prevent the chat from getting too cluttered, the app automatically deletes older messages (based on a limit, e.g., 100 messages).
 
----
+
 
 ## Performance Optimizations
 
