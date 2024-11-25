@@ -1,22 +1,36 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { findPrime } from "../utils/helper";
 
 const Demo = () => {
 
     const [text, setText] = useState(0);
     const [isDarkTheme, setIsDarkTheme] = useState(false);
+    // const [prime, setPrime] = useState();
 
 
-    // console.log("rendering....")
+    // console.log("rendering....") 
 
     // const prime = findPrime(text)
-
-    // const prime =() => {
-    //     console.log("calculating prime number", text);
-    //     return findPrime(text)
-    // };
-
     const prime = useMemo(() => findPrime(text), [text]);
+
+
+    // const prime = () => {
+    //     console.log("calucate number...", text);
+    //     return findPrime(text);
+        
+    // }
+
+
+    // it is hackiy way of doing without using useMemo() hook
+    // useEffect(() => {
+    //   const value = findPrime(text)
+    //   setPrime(value)
+       
+    // }, [text])
+    
+    
+
+    
 
  
     return (

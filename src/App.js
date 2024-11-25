@@ -7,11 +7,18 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainContainer from "./components/MainContainer";
 import WatchPage from './components/WatchPage';
 import Demo from './components/Demo';
+import Demo2 from './components/Demo2';
+import SearchResults from './components/SearchResults';
+
+
 
 const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <Body/>,
+    element: <>
+    <Header/>,
+    <Body/>
+    </>,
     children: [
       {
         path: "/",
@@ -23,7 +30,15 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/demo",
-        element: <Demo/>,
+        element: 
+        <>
+        <Demo/>
+        <Demo2/>
+        </>
+      },
+      {
+        path: "/search/:query",
+        element: <SearchResults/>,
       },
 
     ],
@@ -33,11 +48,12 @@ const appRouter = createBrowserRouter([
 function App() {
   return (
     <Provider store={store}>
-      <div>
-        <Header/>
+      
         <RouterProvider router={appRouter}/>
       
-      </div>
+        
+      
+     
     </Provider>
   );
 }

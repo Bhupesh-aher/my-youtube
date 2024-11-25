@@ -220,5 +220,7 @@ export const findPrime = (num) => {
     primes.push(n);
     n += 2;
   }
+  // console.log("calculating...", num);
+  
   return primes[num - 1];
 };

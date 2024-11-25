@@ -1,4 +1,4 @@
-// const GOOGLE_API_KEY = ;
+const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
 
 export const LIVE_CHAT_COUNT = 25;
@@ -9,3 +9,5 @@ export const YOUTUBE_VIDEOS_API =
   GOOGLE_API_KEY;
 
 export const YOUTUBE_SEARCH_API = "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+// export const YOUTUBE_SEARCH_API = "/api/suggestions?q=";
+
