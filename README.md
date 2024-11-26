@@ -32,6 +32,12 @@ A high-performance, feature-rich video streaming platform built with **React.js*
 
 
 
+## Screenshots
+![Image 1](public/assets/yt1-min.png)
+![Image 1](public/assets/yt2-min.png)
+![Image 1](public/assets/yt3-min.png)
+
+
 ## Technologies
 
 - **Frontend**:
@@ -80,12 +86,4 @@ A high-performance, feature-rich video streaming platform built with **React.js*
 
 ---
 
-## Screenshots
 
-Here are some screenshots showcasing the app in action:
-
-*The homepage featuring various video categories.*
-
-*Optimized search bar with real-time suggestions powered by Redux.*
-
-*Live chat functionality allowing users to interact during video playback.*
